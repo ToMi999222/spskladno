@@ -1,0 +1,88 @@
+Cvičení 02.1:
+
+vek = (-6)
+
+if vek >= 18:
+    print("Dospělý")
+elif vek >= 15:
+    print("Dospívající")
+elif vek > 0:
+    print("Dítě")
+elif vek <= 0:
+    print("neplatný věk")
+
+Cvičení 02.2:
+
+x = input("pozice:" )
+y = int( input() )
+
+if x == "dalnice":
+    if y <= 130:
+        print("OK")
+    else:
+        print("Vysoká rychlost")
+elif x == "mimo_obec":
+    if y <= 90:
+        print("OK")
+    else:
+        print("Vysoká rychlost")
+elif x == "obec":
+    if y <= 50:
+        print("OK")
+    else:
+        print("Vysoká rychlost")
+
+Cvičení 02.3:
+
+x = int(input("Zadejte první číslo: "  ))
+y = input("Zadejte operaci: "  )
+z = int(input("Zadejte druhé číslo: "  ))
+
+if y == "deleni":
+    print(x / z)
+    if z == 0:
+        print("Nelze dělit nulou")
+
+elif y == "nasobeni":
+    print(x * z)
+
+elif y == "odcitani":
+    print(x - z)
+
+elif y == "scitani":
+    print(x + z)
+
+Cvičení 03.1
+
+pismeno = input("zadejte pismeno co chcete hledat: ")
+slovo = input("zadejte slovo ve kterém chcete hledat: ")
+x = int(input("zadejte číslo 1. : "))
+y = int(input("zadejte číslo 2. : "))
+if x == y or pismeno in slovo:
+    print("true")
+else:
+    print("false")
+
+Cvičení 2.03
+
+x = 5
+y = 5
+a = 10
+b = 1
+if x is y == 5 and a + b >= 15:
+    print("true")
+else:
+    print("false")
+
+Cvičení 03.3
+
+pismeno = input("zadejte pismeno co chcete hledat: ")
+slovo = input("zadejte slovo ve kterém chcete hledat: ")
+a = int(input("zadejte číslo 1. : "))
+b = int(input("zadejte číslo 2. : "))
+x = int(input("zadejte číslo 3. : "))
+y = int(input("zadejte číslo 4. : "))
+if a == b or pismeno in slovo or (x is y and a + b > 15):
+    print("true")
+else:
+    print("false")

@@ -1,33 +1,10 @@
-cvičení 1:
-
-vek = (-6)
-
-if vek >= 18:
-    print("Dospělý")
-elif vek >= 15:
-    print("Dospívající")
-elif vek > 0:
-    print("Dítě")
-elif vek <= 0:
-    print("neplatný věk")
-
-cvičení 2:
-
-x = input("pozice:" )
-y = int( input() )
-
-if x == "dalnice":
-    if y <= 130:
-        print("OK")
-    else:
-        print("Vysoká rychlost")
-elif x == "mimo_obec":
-    if y <= 90:
-        print("OK")
-    else:
-        print("Vysoká rychlost")
-elif x == "obec":
-    if y <= 50:
-        print("OK")
-    else:
-        print("Vysoká rychlost")
+pismeno = input("zadejte pismeno co chcete hledat: ")
+slovo = input("zadejte slovo ve kterém chcete hledat: ")
+a = int(input("zadejte číslo 1. : "))
+b = int(input("zadejte číslo 2. : "))
+x = int(input("zadejte číslo 3. : "))
+y = int(input("zadejte číslo 4. : "))
+if a == b or pismeno in slovo or (x is y and a + b > 15):
+    print("true")
+else:
+    print("false")
